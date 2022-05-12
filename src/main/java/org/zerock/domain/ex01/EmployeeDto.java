@@ -8,6 +8,7 @@ import lombok.Data;
 
 @Data
 public class EmployeeDto {
+	private int id;
 	private String lastName;
 	private String firstName;
 //	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)

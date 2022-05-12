@@ -14,6 +14,32 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>${param.id }번 직원의 이름은 ${employeeName }입니다.</h1>
+	<h1>고객 목록</h1>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>CUSTOMERNAME</th>
+				<th>CONTACTNAME</th>
+				<th>ADDRESS</th>
+				<th>CITY</th>
+				<th>POSTALCODE</th>
+				<th>COUNTRY</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach items="${customers }" var="cus">
+				<tr>
+					<td>${cus.id }</td>
+					<td>${cus.customerName }</td>
+					<td>${cus.contactName }</td>
+					<td>${cus.address }</td>
+					<td>${cus.city }</td>
+					<td>${cus.postalCode }</td>
+					<td>${cus.country }</td>
+				</tr>
+			</c:forEach>
+		</tbody>
+	</table>
 </body>
 </html>

@@ -14,9 +14,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+	<c:url value="/ex14/sub06" var="employeeUrl"></c:url>
+	
 	<h1>${message }</h1>
 	<h1>새 직원 등록</h1>
-	<form action="${pageContext.request.contextPath }/ex14/sub06" method="post">
+	<form action="${employeeUrl }" method="post">
 		성 : <input type="text" name="lastName" value="Park" /> <br />
 		이름 : <input type="text" name="firstName" value="ji sung" /> <br />
 		생일 : <input type="date" name="birthDate" value="1980-12-11" /> <br />
